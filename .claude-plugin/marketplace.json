@@ -7,7 +7,7 @@
       "name": "hekivo-web",
       "description": "Hekivo Free — 5 foundational skills for Sage/Acorn/Lando on Claude Code, Copilot, and Cursor.",
       "version": "1.0.0",
-      "source": {"source": "github", "repo": "hekivo/hekivo-web", "ref": "main"},
+      "source": "./",
       "author": {"name": "Hekivo", "url": "https://hekivo.com"}
     }
   ]
