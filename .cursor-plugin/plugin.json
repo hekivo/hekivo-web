@@ -1,7 +1,10 @@
 {
   "name": "hekivo-web",
   "description": "Hekivo Free — foundational WordPress/Sage/Acorn workflow skills for Claude Code, GitHub Copilot, and Cursor. Upgrade to Pro for the full implementation toolkit.",
-  "version": "1.0.0",
+  "version": "2.7.1",
   "hooks": "./hooks/cursor-hooks.json",
-  "author": {"name": "Hekivo", "url": "https://hekivo.com"}
+  "author": {
+    "name": "Hekivo",
+    "url": "https://hekivo.com"
+  }
 }

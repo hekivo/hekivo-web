@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.7.1](https://github.com/hekivo/hekivo-web/compare/superpowers-sage-v2.7.0...superpowers-sage-v2.7.1) (2026-04-21)
+
+
+### Bug Fixes
+
+* **marketplace:** use relative source for same-repo plugin ([e48ac83](https://github.com/hekivo/hekivo-web/commit/e48ac83fdea30e00ea1469f96a3b285ad5b7567c))
+
+
+### Documentation
+
+* **hekivoing:** describe tier overlay model ([2fc9195](https://github.com/hekivo/hekivo-web/commit/2fc9195989f804d877ad6e6cfec148fec02a7d91))
+
 ## [2.7.0](https://github.com/codigodoleo/superpowers-sage/compare/superpowers-sage-v2.6.0...superpowers-sage-v2.7.0) (2026-04-20)
 
 

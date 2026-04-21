@@ -1,12 +1,34 @@
 {
   "name": "hekivo-web",
   "description": "Hekivo Free — foundational WordPress/Sage/Acorn workflow skills for Claude Code, GitHub Copilot, and Cursor. Upgrade to Pro for the full implementation toolkit.",
-  "version": "1.0.0",
-  "author": {"name": "Hekivo", "url": "https://hekivo.com"},
+  "version": "2.7.1",
+  "author": {
+    "name": "Hekivo",
+    "url": "https://hekivo.com"
+  },
   "homepage": "https://github.com/hekivo/hekivo-web",
   "repository": "https://github.com/hekivo/hekivo-web",
   "license": "MIT",
   "tier": "free",
   "upgrade": "https://hekivo.com/pro",
-  "keywords": ["wordpress","sage","acorn","lando","roots","livewire","acf","tailwind","blade","paper","paper-design","stitch","figma","pencil","design-tools","visual-verification","architecture","content-modeling"]
+  "keywords": [
+    "wordpress",
+    "sage",
+    "acorn",
+    "lando",
+    "roots",
+    "livewire",
+    "acf",
+    "tailwind",
+    "blade",
+    "paper",
+    "paper-design",
+    "stitch",
+    "figma",
+    "pencil",
+    "design-tools",
+    "visual-verification",
+    "architecture",
+    "content-modeling"
+  ]
 }
