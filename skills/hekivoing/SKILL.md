@@ -1,5 +1,5 @@
 ---
-name: superpowers-sage:hekivoing
+name: hekivoing
 description: Hekivo — >
   Meta-skill for Sage/Acorn projects — gerund workflow ecosystem, Lando commands,
   architectural preferences, plan system, design tool integration, skill routing,
@@ -10,7 +10,9 @@ description: Hekivo — >
 
 # Hekivoing — The Sage/Acorn Ecosystem Guide
 
-This plugin provides Sage/Acorn-aware workflow skills for modern WordPress development with the Roots ecosystem, Lando, and design tool integration.
+This is the **Free-tier meta skill** for the Hekivo ecosystem — foundational orientation for Sage/Acorn projects with the Roots stack, Lando, and design tool integration.
+
+Hekivo ships as three composable tiers: **Free** (this plugin, `hekivo-web`) for foundational skills; **Pro** (`hekivo-pro`) for full implementation toolkit and workflow automation; **Premium** (`hekivo-premium`) for review automation, performance profiling, and visual verification. Skills below are tagged with their tier — install the matching plugin to get them.
 
 ## HARD RULE — Language Policy
 
@@ -50,22 +52,25 @@ lando acorn <cmd>      # Artisan-style commands (make:block, queue:work, route:l
 
 Skills are **activities** — gerund naming communicates process, not command.
 
-| Skill                      | Command                   | Purpose                                                              |
-| -------------------------- | ------------------------- | -------------------------------------------------------------------- |
-| **Onboarding**             | `/onboarding`             | Project analysis, design tool detection, active plan detection       |
-| **Architecture Discovery** | `/architecture-discovery` | Deep architecture discovery with approval gates and spec review loop |
-| **Plan Generator**         | `/plan-generator`         | Converts approved architecture into executable plan files            |
-| **Architecting**           | `/architecting`           | Compatibility wrapper for architecture-discovery + plan-generator    |
-| **Modeling**               | `/modeling`               | Content architecture analysis (static vs dynamic)                    |
-| **Designing**              | `/designing`              | Design tool integration (Paper/Stitch/Figma/Pencil/offline assets) — routes by URL or file |
-| **Design System**          | `/sage-design-system`     | Establish visual foundation: tokens → UI components → layout components → kitchensink |
-| **Block Scaffolding**      | `/block-scaffolding`      | Scaffold new ACF block with custom element, 4-layer CSS contract, selective CSS+JS enqueue, block README |
-| **Block Refactoring**      | `/block-refactoring`      | Evolve existing block: design drift, CSS coverage, variation expansion, v1→v2 migration |
-| **Migrating**              | `/migrating`              | Safe destructive data migrations: snapshot → dry-run → approval → apply → verify → idempotency |
-| **Building**               | `/building`               | Plan-driven implementation with auto-verification                    |
-| **Verifying**              | `/verifying`              | Visual comparison with design reference                              |
-| **Reviewing**              | `/reviewing`              | Convention audit + design alignment check                            |
-| **Debugging**              | `/debugging`              | Sage-aware troubleshooting with cache knowledge                      |
+| Skill                      | Command                   | Purpose                                                              | Tier    |
+| -------------------------- | ------------------------- | -------------------------------------------------------------------- | ------- |
+| **Onboarding**             | `/onboarding`             | Project analysis, design tool detection, active plan detection       | Free    |
+| **Install Plugin**         | `/install-plugin`         | Install WordPress plugins in Bedrock via Composer                    | Free    |
+| **WP-CLI Ops**             | `/wp-cli-ops`             | WP-CLI operations via Lando                                          | Free    |
+| **Sage Lando**             | `/sage-lando`             | Lando commands, tooling reference, cache management                  | Free    |
+| **Architecture Discovery** | `/architecture-discovery` | Deep architecture discovery with approval gates and spec review loop | Pro     |
+| **Plan Generator**         | `/plan-generator`         | Converts approved architecture into executable plan files            | Pro     |
+| **Architecting**           | `/architecting`           | Compatibility wrapper for architecture-discovery + plan-generator    | Pro     |
+| **Modeling**               | `/modeling`               | Content architecture analysis (static vs dynamic)                    | Pro     |
+| **Designing**              | `/designing`              | Design tool integration (Paper/Stitch/Figma/Pencil/offline assets) — routes by URL or file | Pro     |
+| **Design System**          | `/sage-design-system`     | Establish visual foundation: tokens → UI components → layout components → kitchensink | Pro     |
+| **Block Scaffolding**      | `/block-scaffolding`      | Scaffold new ACF block with custom element, 4-layer CSS contract, selective CSS+JS enqueue, block README | Pro     |
+| **Migrating**              | `/migrating`              | Safe destructive data migrations: snapshot → dry-run → approval → apply → verify → idempotency | Pro     |
+| **Building**               | `/building`               | Plan-driven implementation with auto-verification                    | Pro     |
+| **Block Refactoring**      | `/block-refactoring`      | Evolve existing block: design drift, CSS coverage, variation expansion, v1→v2 migration | Premium |
+| **Verifying**              | `/verifying`              | Visual comparison with design reference                              | Premium |
+| **Reviewing**              | `/reviewing`              | Convention audit + design alignment check                            | Premium |
+| **Debugging**              | `/debugging`              | Sage-aware troubleshooting with cache knowledge                      | Premium |
 
 ### Recommended workflow for new features
 
@@ -137,7 +142,7 @@ components:
 
 ## Design Tool Integration
 
-The plugin routes to a design tool based on the URL the user provides:
+Hekivo routes to a design tool based on the URL the user provides:
 
 | Tool                  | URL pattern                  | MCP                        | Usage                                                                                                           |
 | --------------------- | ---------------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------- |
@@ -174,55 +179,55 @@ These are two completely different tools with similar names:
 
 ## Reference Skills (Agent-Facing)
 
-These skills provide deep technical reference for agents and workflow skills:
+These skills provide deep technical reference for agents and workflow skills. All are **Pro-tier** unless noted:
 
-| Domain                                 | Skill                             |
-| -------------------------------------- | --------------------------------- |
-| Project setup, Lando, ACF, Blade, Vite | `sage-lando` (with `references/`) |
-| Routes & Controllers                   | `acorn-routes`                    |
-| Livewire                               | `acorn-livewire`                  |
-| Eloquent ORM                           | `acorn-eloquent`                  |
-| Middleware & Auth                      | `acorn-middleware`                |
-| Queues & Jobs                          | `acorn-queues`                    |
-| Logging & Errors                       | `acorn-logging`                   |
-| CLI Commands                           | `acorn-commands`                  |
-| Redis                                  | `acorn-redis`                     |
-| Native Blocks                          | `wp-block-native`                 |
-| Capabilities                           | `wp-capabilities`                 |
-| WP-CLI                                 | `wp-cli-ops`                      |
-| Hooks Lifecycle                        | `wp-hooks-lifecycle`              |
-| Performance                            | `wp-performance`                  |
-| PHPStan                                | `wp-phpstan`                      |
-| REST API                               | `wp-rest-api`                     |
-| Security                               | `wp-security`                     |
+| Domain                                 | Skill                             | Tier    |
+| -------------------------------------- | --------------------------------- | ------- |
+| Project setup, Lando, ACF, Blade, Vite | `sage-lando` (with `references/`) | Free    |
+| WP-CLI                                 | `wp-cli-ops`                      | Free    |
+| Routes & Controllers                   | `acorn-routes`                    | Pro     |
+| Livewire                               | `acorn-livewire`                  | Pro     |
+| Eloquent ORM                           | `acorn-eloquent`                  | Pro     |
+| Middleware & Auth                      | `acorn-middleware`                | Pro     |
+| Queues & Jobs                          | `acorn-queues`                    | Pro     |
+| Logging & Errors                       | `acorn-logging`                   | Pro     |
+| CLI Commands                           | `acorn-commands`                  | Pro     |
+| Redis                                  | `acorn-redis`                     | Pro     |
+| Native Blocks                          | `wp-block-native`                 | Pro     |
+| Capabilities                           | `wp-capabilities`                 | Pro     |
+| Hooks Lifecycle                        | `wp-hooks-lifecycle`              | Pro     |
+| PHPStan                                | `wp-phpstan`                      | Pro     |
+| REST API                               | `wp-rest-api`                     | Pro     |
+| Security                               | `wp-security`                     | Pro     |
+| Performance                            | `wp-performance`                  | Premium |
 
 ## Hooks & Automation
 
-The plugin includes zero-token automation hooks:
+The Hekivo ecosystem includes zero-token automation hooks. Only `session-start` ships with the Free tier; all others require **Pro**:
 
-| Hook            | Trigger              | Action                                                |
-| --------------- | -------------------- | ----------------------------------------------------- |
-| `session-start` | Session start        | Health check, design tool detection, inject hekivoing   |
-| `post-edit`     | Write/Edit tool      | `lando flush` for PHP, `lando theme-build` for assets |
-| `post-compact`  | Context compression  | Inject active plan reminder + asset count             |
-| `pre-commit`    | `git commit` in Bash | Visual verification reminder                          |
-| `post-subagent` | Subagent completion  | Log activity to plan directory                        |
-| `post-stop`     | Session end          | Log session end to plan directory                     |
+| Hook            | Trigger              | Action                                                | Tier    |
+| --------------- | -------------------- | ----------------------------------------------------- | ------- |
+| `session-start` | Session start        | Inline design tool detection and inject hekivoing     | Free    |
+| `post-edit`     | Write/Edit tool      | `lando flush` for PHP, `lando theme-build` for assets | Pro     |
+| `post-compact`  | Context compression  | Inject active plan reminder + asset count             | Pro     |
+| `pre-commit`    | `git commit` in Bash | Visual verification reminder                          | Pro     |
+| `post-subagent` | Subagent completion  | Log activity to plan directory                        | Pro     |
+| `post-stop`     | Session end          | Log session end to plan directory                     | Pro     |
 
 ## Integration with Base Superpowers
 
-This plugin extends [obra/superpowers](https://github.com/obra/superpowers). Workflow skills orchestrate base skills:
+The Hekivo ecosystem extends [obra/superpowers](https://github.com/obra/superpowers). Workflow skills orchestrate base skills. The workflows below require **Pro** or **Premium** — install the appropriate overlay plugin to unlock them:
 
-| Base Skill                       | Used By                                                   |
-| -------------------------------- | --------------------------------------------------------- |
-| `brainstorming`                  | `/architecture-discovery` (design-first discovery engine) |
-| `writing-plans`                  | `/plan-generator` (plan expansion model)                  |
-| `executing-plans`                | `/building` (plan execution)                              |
-| `subagent-driven-development`    | `/building` (parallel component implementation)           |
-| `dispatching-parallel-agents`    | `/building` (independent component parallelism)           |
-| `finishing-a-development-branch` | `/reviewing` (merge/PR workflow)                          |
-| `systematic-debugging`           | `/debugging` (core engine)                                |
-| `verification-before-completion` | `/verifying` (completion gate)                            |
+| Base Skill                       | Used By                                                   | Requires |
+| -------------------------------- | --------------------------------------------------------- | -------- |
+| `brainstorming`                  | `/architecture-discovery` (design-first discovery engine) | Pro      |
+| `writing-plans`                  | `/plan-generator` (plan expansion model)                  | Pro      |
+| `executing-plans`                | `/building` (plan execution)                              | Pro      |
+| `subagent-driven-development`    | `/building` (parallel component implementation)           | Pro      |
+| `dispatching-parallel-agents`    | `/building` (independent component parallelism)           | Pro      |
+| `finishing-a-development-branch` | `/reviewing` (merge/PR workflow)                          | Premium  |
+| `systematic-debugging`           | `/debugging` (core engine)                                | Premium  |
+| `verification-before-completion` | `/verifying` (completion gate)                            | Premium  |
 
 ## Commit Message Hygiene
 
